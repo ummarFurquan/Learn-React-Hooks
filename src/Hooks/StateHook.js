@@ -9,11 +9,13 @@ function StateHook() {
                                                 This is very beneficial when you want to update the state of one particular thing and not the other!*/
   const IncrementCount = () => {
     setCount((prevCount) => prevCount + 1);
+    setTheme('Blue')
   };
 
   const DecrementCount = () => {
     setCount(
-      (prevCount) => prevCount - 1
+      (prevCount) => prevCount - 1,
+      setTheme('Red')
     ); /* Here the state of the theme only changes from BLUE to RED,
                                                   only when we click on the Decrement Count button and not on the increment Count Button */
   };
