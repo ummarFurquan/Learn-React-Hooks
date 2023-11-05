@@ -2,7 +2,10 @@ import React, { useState } from "react";
 
 function StateHook() {
   const [count, setCount] = useState(0);
-  const [theme, setTheme] = useState("Blue"); /* This remains constant but the state of the Count Changes,
+  const [theme, setTheme] =
+    useState(
+      "Blue"
+    ); /* This remains constant but the state of the Count Changes,
                                                 This is very beneficial when you want to update the state of one particular thing and not the other!*/
   const IncrementCount = () => {
     setCount((prevCount) => prevCount + 1);
