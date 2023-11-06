@@ -47,6 +47,8 @@ function StateHook() {
           -
         </button>
       </div>
+      <h3 className="container my-5">Click on the + button to Increment the count</h3>
+      <h3 className="container my-5">Click on the - button to Decrement  the count &#40;<strong>This also changes the state of Blue to Red&#41;</strong></h3>
     </>
   );
 }
