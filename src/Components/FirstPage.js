@@ -7,6 +7,9 @@ function FirstPage() {
     const navToState = () => {
         nav('/useState');
     }
+    const navToEffect = () => {
+      nav('/useEffect')
+    }
   return (
     <>
     <div className='container'>
@@ -15,7 +18,7 @@ function FirstPage() {
         </div>
         <div className='mx-5' style={{display:'flex', justifyContent:'space-around', alignItems:'center'}}>
         <button onClick={navToState}  className='btn btn-outline-dark mx-5'>useState Hook</button>
-        <button className='btn btn-outline-dark mx-5'>useEffect Hook</button>
+        <button onClick={navToEffect} className='btn btn-outline-dark mx-5'>useEffect Hook</button>
         <button className='btn btn-outline-dark mx-5'>useMemo Hook</button>
         <button className='btn btn-outline-dark mx-5'>useRef Hook</button>
         <button className='btn btn-outline-dark mx-5'>useContext Hook</button>
