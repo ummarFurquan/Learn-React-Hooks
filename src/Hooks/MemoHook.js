@@ -65,7 +65,7 @@ console.log('theme changed')
     <>
     <div className='container my-5' style={{display:'flex', flexDirection:'column' , justifyContent:'center', alignItems:'center'}}>
         <h1>The useMemo Hook</h1>
-        <h4>The memo in useMemo stands for Memorization &#40; The React useMemo Hook returns a memoized value&#41;</h4>
+        <h4>The memo in useMemo stands for Memorization <strong> &#40; The React useMemo Hook returns a memoized value&#41;</strong></h4>
         <h4> &#40;The useMemo Hook only runs when one of its dependencies update. This can improve performance. &#41;</h4>
         <strong>The useMemo hook is used for performance optimization!</strong>
     </div>
