@@ -19,7 +19,7 @@ function FirstPage() {
     <div className='container'>
         
             <h1 className='my-5 mx-5' style={{display:'flex', justifyContent:'center', alignItems:'center'}}>Learn About React Hooks!</h1>
-        </div>
+        
         <div className='mx-5' style={{display:'flex', justifyContent:'space-around', alignItems:'center'}}>
         <button onClick={navToState}  className='btn btn-outline-dark mx-5'>useState Hook</button>
         <button onClick={navToEffect} className='btn btn-outline-dark mx-5'>useEffect Hook</button>
@@ -32,6 +32,7 @@ function FirstPage() {
         <button className='btn btn-outline-dark mx-5'>useState Hook</button>
         <button className='btn btn-outline-dark mx-5'>useState Hook</button>
         </div>
+    </div>
         <div className='container my-5 mx-5'>
             <h1>About Hooks</h1>
         </div>
