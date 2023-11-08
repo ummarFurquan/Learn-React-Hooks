@@ -14,6 +14,9 @@ function FirstPage() {
     const navToMemo = () => {
       nav('/useMemo')
     }
+    const navToRef = () => {
+      nav('/useRef')
+    }
   return (
     <>
     <div className='container'>
@@ -24,7 +27,7 @@ function FirstPage() {
         <button onClick={navToState}  className='btn btn-outline-dark mx-5'>useState Hook</button>
         <button onClick={navToEffect} className='btn btn-outline-dark mx-5'>useEffect Hook</button>
         <button onClick={navToMemo} className='btn btn-outline-dark mx-5'>useMemo Hook</button>
-        <button className='btn btn-outline-dark mx-5'>useRef Hook</button>
+        <button onClick={navToRef} className='btn btn-outline-dark mx-5'>useRef Hook</button>
         <button className='btn btn-outline-dark mx-5'>useContext Hook</button>
         <button className='btn btn-outline-dark mx-5'>useReducer Hook</button>
         <button className='btn btn-outline-dark mx-5'>useCallBack Hook</button>
