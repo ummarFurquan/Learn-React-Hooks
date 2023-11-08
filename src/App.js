@@ -5,6 +5,7 @@ import FirstPage from './Components/FirstPage';
 import StateHook from './Hooks/StateHook';
 import EffectHook from './Hooks/EffectHook';
 import MemoHook from './Hooks/MemoHook'
+import RefHooks from './Hooks/RefHooks'
 function App() {
   return (
    <>
@@ -17,6 +18,8 @@ function App() {
     <Route path='/useEffect' element={<EffectHook/>}></Route>
 
     <Route path='/useMemo' element={<MemoHook/>}></Route>
+
+    <Route path='/useRef' element={<RefHooks/>}></Route>
 
    </Routes>
    </BrowserRouter>
