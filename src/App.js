@@ -6,6 +6,7 @@ import StateHook from './Hooks/StateHook';
 import EffectHook from './Hooks/EffectHook';
 import MemoHook from './Hooks/MemoHook'
 import RefHooks from './Hooks/RefHooks'
+import ContextHook from './Hooks/usecontext/ContextHook';
 function App() {
   return (
    <>
@@ -20,6 +21,8 @@ function App() {
     <Route path='/useMemo' element={<MemoHook/>}></Route>
 
     <Route path='/useRef' element={<RefHooks/>}></Route>
+
+    <Route path='/useContext' element={<ContextHook/>}></Route>
 
    </Routes>
    </BrowserRouter>
