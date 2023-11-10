@@ -1,11 +1,17 @@
-import React from 'react'
+import React  from 'react'
+import FunctionalComponent  from './FunctionalComponent'
+// import  ClassComponent  from './ClassComponent'
+import { ThemeProvider } from './ThemeContext'
 
-function ContextHook() {
+export default function ContextHook() {
+
   return (
-    <div className="container">
+      <ThemeProvider> 
+      <FunctionalComponent/>
+      {/* <ClassComponent/>   */}
+      </ThemeProvider>    
 
-    </div>
+
   )
 }
 
-export default ContextHook
