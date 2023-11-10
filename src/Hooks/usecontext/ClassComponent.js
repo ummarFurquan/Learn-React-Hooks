@@ -1,25 +1,15 @@
 import React, { Component } from 'react'
-import { ThemeContext } from './ContextHook'
 
-export default class ClassComponent extends Component {
-  themeStyles(dark){
-    return{
-      backgroundColor: dark ? '#333' : '#CCC',
-      color : dark ? '#CCC' : '#333',
-      padding : '2rem',
-      margin: '2rem'
-    }
-  }
+export class ClassComponent extends Component {
   render() {
     return (
-
-        <ThemeContext.Consumer>
-        {darkTheme => {
-          return <div style={this.themeStyles(darkTheme)}>Class Theme</div>
-        }}  
+      <div>
         
-        </ThemeContext.Consumer>        
+      </div>
     )
   }
 }
+
+export default ClassComponent
+
 
