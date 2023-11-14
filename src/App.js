@@ -7,6 +7,7 @@ import EffectHook from './Hooks/EffectHook';
 import MemoHook from './Hooks/MemoHook'
 import RefHooks from './Hooks/RefHooks'
 import ContextHook from './Hooks/usecontext/ContextHook';
+import Reducerhook from './Reducerhook';
 function App() {
   return (
    <>
@@ -23,6 +24,8 @@ function App() {
     <Route path='/useRef' element={<RefHooks/>}></Route>
 
     <Route path='/useContext' element={<ContextHook/>}></Route>
+
+    <Route path='/useReducer' element={<Reducerhook/>}></Route>
 
    </Routes>
    </BrowserRouter>
