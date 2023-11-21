@@ -8,6 +8,7 @@ import MemoHook from './Hooks/MemoHook'
 import RefHooks from './Hooks/RefHooks'
 import ContextHook from './Hooks/usecontext/ContextHook';
 import Reducerhook from './Reducerhook';
+import CallBackHook from './Hooks/CallBack/CallBackHook';
 function App() {
   return (
    <>
@@ -26,6 +27,8 @@ function App() {
     <Route path='/useContext' element={<ContextHook/>}></Route>
 
     <Route path='/useReducer' element={<Reducerhook/>}></Route>
+
+    <Route path='/useCallBack' element={<CallBackHook/>}/>
 
    </Routes>
    </BrowserRouter>
