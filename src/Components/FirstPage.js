@@ -26,6 +26,10 @@ function FirstPage() {
       nav('/useReducer')
     }
 
+    const navToCallBack = () => {
+      nav('/useCallback')
+    }
+
   return (
     <>
     <div className='container'>
@@ -39,7 +43,7 @@ function FirstPage() {
         <button onClick={navToRef} className='btn btn-outline-dark mx-5'>useRef Hook</button>
         <button onClick={navToContext} className='btn btn-outline-dark mx-5'>useContext Hook</button>
         <button onClick={navToReducer} className='btn btn-outline-dark mx-5'>useReducer Hook</button>
-        <button className='btn btn-outline-dark mx-5'>useCallBack Hook</button>
+        <button onClick={navToCallBack} className='btn btn-outline-dark mx-5'>useCallBack Hook</button>
         <button className='btn btn-outline-dark mx-5'>useState Hook</button>
         <button className='btn btn-outline-dark mx-5'>useState Hook</button>
         <button className='btn btn-outline-dark mx-5'>useState Hook</button>
