@@ -26,7 +26,7 @@ function EffectHook() {
     <h1 style={{display:'flex', justifyContent:'center', alignItems:'center'}}>{resourceType}</h1> 
     <h3 className='container'>Data from the API</h3>
     {items.map(item => {
-        return <p>{JSON.stringify(item)}</p>})}  
+        return <p key={item.id}>{JSON.stringify(item)}</p>})}  
     </div>
     </>
   )
